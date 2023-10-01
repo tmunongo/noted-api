@@ -17,7 +17,7 @@ export class UsersService {
     lastName: string,
     password: string,
   ): Promise<User> {
-    return this.usersRepository.create({
+    return this.usersRepository.save({
       username,
       email,
       firstName,
